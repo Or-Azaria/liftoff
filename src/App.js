@@ -6,9 +6,8 @@ import Login from "./pages/LogIn"
 import Register from "./pages/Register"
 import User from "./pages/UserDashbord"
 import Profile from "./pages/Profile"
-import JuniorProblem from "././pages/JuniorProblem"
+import JuniorProblem from "./pages/JuniorProblem"
 import MentorHelp from "./pages/MentorHelp"
-import JobTrack from "./pages/JobTrack"
 import System from "./pages/System"
 
 
@@ -25,7 +24,6 @@ function App() {
         <Route path='/' element={<User/>}>
           <Route path='' element={<JuniorProblem/>}/>
           <Route path='mentorhelp' element={<MentorHelp/>}/>
-          <Route path='jobtrack' element={<JobTrack/>}/>
           <Route path='profile' element={<Profile/>}/>
           <Route path='system' element={<System/>}/>
         </Route>

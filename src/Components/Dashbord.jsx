@@ -25,7 +25,7 @@ export default function Dashbord() {
     <p className="text-red">Hello</p>
     <div className="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
       <ul className="underline underline-offset-1 space-y-2">
-        <li>
+        <li className='cursor-pointer' onClick={()=>navigate('')}>
           <a
             href="#"
             className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -33,20 +33,12 @@ export default function Dashbord() {
             <span className=" ml-3">Junior Problem</span>
           </a>
         </li>
-        <li className='cursor-pointer' onClick={()=>navigate('')}>
+        <li className='cursor-pointer' onClick={()=>navigate('mentorhelp')}>
           <a
             href="#"
             className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <span className="ml-3">Mentor Help</span>
-          </a>
-        </li>
-        <li className='cursor-pointer' onClick={()=>navigate('jobtrack')}>
-          <a
-            href="#"
-            className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-          >
-            <span className="ml-3">Job Track</span>
           </a>
         </li>
         <li className='cursor-pointer' onClick={()=>navigate('profile')}>
