@@ -1,11 +1,11 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom';
-import Dashbord from '../Components/Dashbord';
+import Dashboard from '../Components/Dashboard';
 
 export default function UserDashbord() {
   return (
     <div className='flex'>
-        <Dashbord/>
+        <Dashboard/>
         <Outlet/>
     </div>
   )

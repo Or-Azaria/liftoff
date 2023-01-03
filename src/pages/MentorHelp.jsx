@@ -1,9 +1,14 @@
 import React from "react";
 import { Accordion, Avatar } from "flowbite-react";
+import { useNavigate } from "react-router";
 
 export default function MentorHelp() {
+    const navigate = useNavigate();
   return (
     <div className="w-3/4 m-auto mt-32">
+        <div>
+        <h3>Volunteer & and help juniors to improve themselves</h3>
+        </div>
       <Accordion alwaysOpen={true}>
         <Accordion.Panel>
           <Accordion.Title>
@@ -23,6 +28,7 @@ export default function MentorHelp() {
             </p>
             <button
               className="bg-green-400 text-white p-1"
+              onClick={()=>navigate('/chat')}
             >
               Send a message
             </button>
