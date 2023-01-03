@@ -1,6 +1,5 @@
 import React from "react";
 import {Avatar } from "flowbite-react";
-import JuniorProblem from "./JuniorProblem";
 
 export default function Chat() {
   return (
@@ -39,7 +38,6 @@ export default function Chat() {
             </div>
           </div>
         </div>
-      <JuniorProblem/>
       </div>
     </div>
   );

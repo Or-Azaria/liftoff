@@ -9,6 +9,7 @@ import Profile from "./pages/Profile"
 import JuniorProblem from "./pages/JuniorProblem"
 import MentorHelp from "./pages/MentorHelp"
 import System from "./pages/System"
+import Chat from './pages/Chat';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path='profile' element={<Profile/>}/>
           <Route path='system' element={<System/>}/>
         </Route>
+          <Route path='/chat' element={<Chat/>}/>
 
         {/* routes for volunteer */}
         {/* <Route>
